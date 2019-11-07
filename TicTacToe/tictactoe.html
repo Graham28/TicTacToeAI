@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tic Tac Zero</title>
+  <meta name="description" content="Tic Tac Toe AI">
+  <meta name="author" content="Graham">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="drawBoard()">
+	<div class="container">
+		<p>Play as: 
+		<span>
+			<input type="radio" name="player" value="x"> X
+			<input type="radio" name="player" value="o"> O
+		</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		AI trained games:
+		<span>
+			<input  id="trained_games" type="range" min="0" max="5" value="0">
+		</span>
+		<button type="button" onclick="newGame()">New Game</button>
+		</p>
+		<div>
+			<canvas id="Board" width="600" height="600"></canvas>
+		</div>
+	</div>
+	
+	
+  <script src="scripts.js"></script>
+</body>
+</html>
