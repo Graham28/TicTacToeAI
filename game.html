@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tic Tac Zero</title>
+  <meta name="description" content="Tic Tac Toe AI">
+	<meta name="author" content="Graham">
+	<link rel="stylesheet" type="text/css" href="./css/game.css">
+
+</head>
+
+<body onload="drawBoard()">
+	<div class = "top">
+		<h1>Tic Tac Zero AI</h1> 
+		<span id="level">
+				<span id="games_display">Training Games = <span id="num_games"></span></span>
+				<input  id="trained_games" type="range" min="0" max="6" value="4">
+			</span>
+	</div>
+	<div class="container">
+		<div>
+			<canvas id="Board" width="600" height="600"></canvas>
+		</div>
+		<p class ="new_game"> 
+			<span style = "display: none;">
+				<input id="x_check" type="radio" name="player" value="x"> X
+				<input id="o_check" type="radio" name="player" value="o"> O
+			</span>
+			<span class = "x_o_buttons">
+				<button id="x" type="button">X</button>
+				<button id="o" type="button">O</button>
+			</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="game_button" type="button" onclick="newGame()">NEW GAME</button>
+			</p>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+	<script src="./javascript/scripts.js"></script>
+
+</body>
+</html>
